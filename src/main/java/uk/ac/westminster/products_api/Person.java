@@ -1,8 +1,17 @@
 package uk.ac.westminster.products_api;
 
 /**
- * Represents a person with a name and email address.
- * Getter and setter methods follow the JavaBean convention.
+ * Week 1 starter class.
+ *
+ * Already provided:
+ *   - a private "name" field
+ *   - a no-argument constructor (required by Jackson later in the module)
+ *   - a full constructor
+ *   - a getter and setter for "name"
+ *
+ * TODO (Lab Activity 3):
+ *   Add a new private String field called "email", following the
+ *   JavaBean convention: provide a getter called getEmail().
  */
 public class Person {
 
@@ -16,11 +25,6 @@ public class Person {
         this.name = name;
     }
 
-    public Person(String name, String email) {
-        this.name = name;
-        this.email = email;
-    }
-
     public String getName() {
         return name;
     }
@@ -29,11 +33,10 @@ public class Person {
         this.name = name;
     }
 
+    // TODO (Activity 3): add the "email" field and its getter here.
     public String getEmail() {
+
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
 }
